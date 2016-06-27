@@ -1,0 +1,12 @@
+"3.8.2 (created: 2014/02/13 23:52:43)
+
+set noscrollbars
+set gui=none
+set complete=sl
+set suggestengines=gg
+set yankencodedurl=true
+set fc=true
+set hintchars=dhtsaoeuifgcrlpybmwvzqjkx
+hi StatusLine color: white; background: black; font-weight: normal;
+
+" vim: set ft=vimperator:
