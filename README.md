@@ -1,2 +1,2 @@
 # config
-Config files
+My system configuration files.
