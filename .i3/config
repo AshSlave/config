@@ -163,7 +163,6 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id urxvtd
 assign [class="Unity"] 4
 assign [class="VirtualBox"] 5
-#assign [class="Thunar"] 3
 #bindcode $mod+48 exec --no-startup-id ~/bin/restore_layout
 bindsym $mod+Shift+Escape exec --no-startup-id systemctl hibernate
 bindsym $mod+t border toggle
