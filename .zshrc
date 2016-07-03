@@ -4,7 +4,7 @@ HISTSIZE=1000
 SAVEHIST=3000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/ivekaraja/.zshrc'
+zstyle :compinstall filename '/home/sumire/.zshrc'
 
 autoload -U compinit promptinit
 compinit
