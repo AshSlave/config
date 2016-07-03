@@ -71,7 +71,7 @@ fi
      ffmpeg -f x11grab -s "$INRES" -r "$FPS" -i :0.0 -f alsa -i pulse -f flv -ac 2 -ar $AUDIO_RATE \
        -vcodec libx264 -g $GOP -keyint_min $GOPMIN -b:v $CBR -minrate $CBR -maxrate $CBR -pix_fmt yuv420p\
        -s $OUTRES -preset $QUALITY -tune film -acodec libmp3lame -threads $THREADS -strict normal \
-       -bufsize $CBR "rtmp://$SERVER.twitch.tv/app/live_63186393_W6la5Vcha2nZzQBj7mesvAq85jt8hd"
+       -bufsize $CBR "rtmp://$SERVER.twitch.tv/app/live_"#key
  }
 
 rg() {
