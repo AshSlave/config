@@ -121,4 +121,8 @@ if [ -e ~/.nix-profile/bin/ghc ]; then
   export NIX_GHC_LIBDIR="$HOME/.nix-profile/lib/ghc-$($NIX_GHC --numeric-version)"
 fi
 
-source ~/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -e ~/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+  source ~/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
