@@ -176,7 +176,7 @@ bindsym $mod+x [urgent=latest] focus
 bindsym $mod+c exec xdotool click --repeat 50 --delay 2 1
 bindsym Print exec scrot
 bindsym $mod+p exec bash -c "xclip -o | xargs -i curl {} | feh -"
-bindsym $mod+o exec bash -c "xclip -o | xargs -i mpv --force-window --loop-file=inf {}"
+bindsym $mod+o exec urxvtc -e bash -c "xclip -o | xargs -i mpv --loop-file=inf {}"
 bindsym $mod+i exec urxvtc -e sh -c "xclip -o | xargs -i w3m {}"
 bindsym $mod+m exec urxvtc -e ~/bin/mark
 bindsym $mod+apostrophe exec urxvtc -e ~/bin/recall
