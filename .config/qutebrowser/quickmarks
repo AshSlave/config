@@ -1,28 +1,17 @@
-xle news http://xlengine.com/blog/
-xle forum http://xlengine.com/forums/search.php?search_id=unreadposts&sid=4e00bec54dc7bb322090b54ffeb0a8fd
 andoran news http://www.andoran.com/
-andoran forum http://www.fullrest.ru/forum/forum/337-tes-v-andoran/
-arch news https://www.archlinux.org/news/
-arch forum https://bbs.archlinux.org/viewforum.php?id=44
-Ordscare http://rutracker.org/forum/search.php?uid=7535719&search_author=1
-KEa http://forums.ag.ru/?board=allabout&action=usersrecentposts&username=KEa
-Dubb-Dubb http://riotpixels.com/forums/index.php?app=core&module=search&do=user_activity&search_app=forums&mid=89&sid=ec4d567800953571301dfa9fa92f79fa&search_app_filters[forums][searchInKey]=&userMode=content
+kea http://forums.ag.ru/?board=allabout&action=usersrecentposts&username=KEa
+dubb-dubb http://riotpixels.com/forums/index.php?app=core&module=search&do=user_activity&search_app=forums&mid=89&sid=ec4d567800953571301dfa9fa92f79fa&search_app_filters[forums][searchInKey]=&userMode=content
 gtr https://translate.google.ee/#en/ru/
 jdic http://www.csse.monash.edu.au/~jwb/cgi-bin/wwwjdic.cgi?1C
 kanji http://kanji.sljfaq.org/
 dfw http://forums.dfworkshop.net/search.php?search_id=unreadposts
 omw https://forum.openmw.org/search.php?search_id=unreadposts
 yt https://www.youtube.com/feed/subscriptions
-haskell console http://hackage.haskell.org/package/haskeline-0.6.2.2/docs/System-Console-Haskeline.html
-bookmarks file:///home/ivekaraja/bookmarks.html
-steam http://store.steampowered.com/news/
 unityBuild http://docs.unity3d.com/ScriptReference/EditorUserBuildSettings.SwitchActiveBuildTarget.html
-aw https://wiki.archlinux.org/
 tar http://www.thegeekstuff.com/2010/04/unix-tar-command-examples/
 steam playism http://store.steampowered.com/search/?publisher=AGM%20PLAYISM
 learn3 https://msdn.microsoft.com/en-us/library/dk1507sz.aspx
 danbooru http://danbooru.donmai.us/explore/posts/popular
-majikoi http://rutracker.org/forum/viewtopic.php?t=2194566
 haskell http://en.wikibooks.org/wiki/Haskell
 haskell nix https://github.com/NixOS/cabal2nix/blob/master/doc/user-guide.md
 learn http://ssj3gohan.tweakblogs.net/
@@ -31,4 +20,5 @@ majikoi vid https://www.youtube.com/watch?v=F5N_HJHw9ts
 gml https://mail.google.com/mail/u/0/#inbox
 hs https://www.reddit.com/r/haskell
 unity linux https://twitter.com/natosha_bard
-qutebrowser https://bbs.archlinux.org/viewtopic.php?pid=1552375#p1552375
+xle http://xlengine.com/forums/search.php?search_id=unreadposts
+zdic http://www.zdic.net/
