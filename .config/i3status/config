@@ -40,5 +40,5 @@ disk "/" {
 volume master {
         format = "âª: %volume"
         format_muted = "âª: muted (%volume)"
-        device = "pulse"
+        device = "alsa"
 }

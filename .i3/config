@@ -161,7 +161,7 @@ bar {
 }
 
 for_window [class="Unity"] layout tabbed
-#exec --no-startup-id xrdb -merge ~/.Xresources
+exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id urxvtd
 assign [class="Unity"] 4
 assign [class="VirtualBox"] 5
