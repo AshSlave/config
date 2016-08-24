@@ -105,11 +105,13 @@ alias mv='mv -i'
 alias rm='rm -I'
 alias nq='nix-env -qaP --description | grep'
 alias bms='vim ~/mess/bookmarks'
-alias mail='w3m -cookie "https://mail.google.com/mail/u/0/h/1dvqns70u1662"'
+alias mail='w3m -cookie "https://mail.google.com/mail/u/0/h/ildecpdevhyk"'
 alias minecraft-server='cd ~/Games/Minecraft; java -Xmx1024M -Xms1024M -jar minecraft_server.1.9.4.jar nogui; cd -'
 alias sp='sudo systemctl suspend'
 alias hp-a2dp='pacmd set-card-profile bluez_card.00_02_3C_03_3D_26 a2dp_sink; amixer sset Master playback 100%'
 alias hp-hhu='pacmd set-card-profile bluez_card.00_02_3C_03_3D_26 headset_head_unit; amixer sset Master playback 40%'
+alias bcsd='echo sudo shutdown | ssh nixos'
+alias omp='omxplayer -o local'
 
 # Prevent Wine from adding menu entries and desktop links.
 #export WINEDLLOVERRIDES='winemenubuilder.exe=d'
@@ -121,4 +123,8 @@ if [ -e ~/.nix-profile/bin/ghc ]; then
   export NIX_GHC_LIBDIR="$HOME/.nix-profile/lib/ghc-$($NIX_GHC --numeric-version)"
 fi
 
-source ~/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -e ~/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+  source ~/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
