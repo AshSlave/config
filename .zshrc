@@ -112,6 +112,8 @@ alias hp-a2dp='pacmd set-card-profile bluez_card.00_02_3C_03_3D_26 a2dp_sink; am
 alias hp-hhu='pacmd set-card-profile bluez_card.00_02_3C_03_3D_26 headset_head_unit; amixer sset Master playback 40%'
 alias bcsd='echo sudo shutdown | ssh nixos'
 alias omp='omxplayer -o local'
+alias ytsel='youtube-dl -g $(xclip -o)'
+alias ompys='omp $(ytsel)'
 
 # Prevent Wine from adding menu entries and desktop links.
 #export WINEDLLOVERRIDES='winemenubuilder.exe=d'
