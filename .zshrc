@@ -84,7 +84,7 @@ rg() {
 }
 
 capture() {
-	ffmpeg -f x11grab -s 1680x1050 -i $DISPLAY -f alsa -i default -c:v ffvhuff -c:a flac $1.mkv
+	ffmpeg -f x11grab -s 1280x1024 -i $DISPLAY -f alsa -i default -c:v ffvhuff -c:a flac $1.mkv
 }
 
 ytconvert() {
