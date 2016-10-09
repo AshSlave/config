@@ -67,13 +67,13 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+z split h
+bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindcode $mod+29 fullscreen
+bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -174,9 +174,10 @@ bindsym $mod+x [urgent=latest] focus
 #bindsym $mod+n exec xset -dpms; exec xset s off
 #bindsym $mod+m exec sleep 1; exec xset dpms force off; exec xset s 5 5
 bindsym $mod+c exec xdotool click --repeat 50 --delay 2 1
+bindsym $mod+Control+c exec ./bin/fast_clicking.sh
 bindsym Print exec scrot
 bindsym $mod+p exec bash -c "xclip -o | xargs -i curl {} | feh -"
-bindsym $mod+o exec bash -c "xclip -o | xargs -i mpv --force-window=yes --loop-file=inf {}"
+bindsym $mod+o exec bash -c "xclip -o | xargs -i mpv --force-window --loop-file=inf {}"
 bindsym $mod+i exec urxvtc -e sh -c "xclip -o | xargs -i w3m {}"
 bindsym $mod+m exec urxvtc -e ~/bin/mark
 bindsym $mod+b exec urxvtc -e ~/bin/recall
