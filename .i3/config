@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec urxvtcd
 
 # kill focused window
 bindcode $mod+Shift+53 kill
@@ -174,8 +174,9 @@ bindsym $mod+x [urgent=latest] focus
 #bindsym $mod+n exec xset -dpms; exec xset s off
 #bindsym $mod+m exec sleep 1; exec xset dpms force off; exec xset s 5 5
 bindsym $mod+c exec xdotool click --repeat 50 --delay 2 1
-bindsym $mod+Control+c exec ./bin/fast_clicking.sh
-bindsym Print exec scrot
+bindsym $mod+Control+c exec ~/bin/fast_clicking.sh
+bindsym --release Print exec --no-startup-id scrot
+bindsym --release Shift+Print exec --no-startup-id scrot -s
 bindsym $mod+p exec curl `xclip -o` | feh -
 bindsym $mod+o exec mpv --force-window --loop-file=inf `xclip -o`
 bindsym $mod+i exec urxvtc -e w3m `xclip -o`
