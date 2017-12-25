@@ -3,10 +3,10 @@
 set noscrollbars
 set gui=none
 set complete=sl
-set suggestengines=gg
+set suggestengines=google
 set yankencodedurl=true
 set fc=true
-set hintchars=dhtsaoeuifgcrlpybmwvzqjkx
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
 hi StatusLine color: white; background: black; font-weight: normal;
 
 " vim: set ft=vimperator:
