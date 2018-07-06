@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtcd
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindcode $mod+Shift+53 kill
@@ -159,14 +159,16 @@ bar {
 	position top
     	modifier mod2
 }
+new_window pixel 1
 
 for_window [class="Unity"] layout tabbed
 for_window [class="mpv"] floating enable
-exec --no-startup-id xrdb -merge ~/.Xresources
 assign [class="Unity"] 4
 assign [class="VirtualBox"] 5
 bindcode $mod+48 exec --no-startup-id ~/bin/restore_layout
 bindsym $mod+Shift+Escape exec --no-startup-id systemctl hibernate
+bindcode $mod+70 exec ~/bin/wkill
+bindsym $mod+Shift+BackSpace exec ~/bin/wkill -9
 bindsym $mod+t border toggle
 bindsym $mod+Control+space move scratchpad
 bindsym $mod+Tab scratchpad show
@@ -175,13 +177,14 @@ bindsym $mod+x [urgent=latest] focus
 #bindsym $mod+m exec sleep 1; exec xset dpms force off; exec xset s 5 5
 bindsym $mod+c exec xdotool click --repeat 50 --delay 2 1
 bindsym $mod+Control+c exec ~/bin/fast_clicking.sh
+bindsym --release Mod1+Tab exec ~/bin/clicking0
 bindsym --release Print exec --no-startup-id scrot
 bindsym --release Shift+Print exec --no-startup-id scrot -s
-bindsym $mod+p exec curl `xclip -o` | feh -
+bindsym $mod+p exec curl `xclip -o` | imv -
 bindsym $mod+o exec mpv --force-window --loop-file=inf `xclip -o`
+bindsym $mod+Shift+o exec ~/bin/umpv `xclip -o`
 bindsym $mod+i exec urxvtc -e w3m `xclip -o`
 bindsym $mod+m exec urxvtc -e ~/bin/mark
 bindsym $mod+b exec urxvtc -e ~/bin/recall
 bindsym $mod+Next exec amixer sset Master playback 5%-
 bindsym $mod+Prior exec amixer sset Master playback 5%+
-new_window pixel 1
